@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harini KV - AI/ML Engineer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.8;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 0.3rem;
+    }
+    ul.skills-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    ul.skills-list li {
+      background: #0073e6;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+    }
+    .projects article {
+      background: white;
+      border-radius: 5px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      transition: box-shadow 0.3s ease;
+    }
+    .projects article:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+    }
+    .project-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #004080;
+    }
+    .project-tech {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .project-desc {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .experience-timeline {
+      border-left: 3px solid #004080;
+      padding-left: 1rem;
+      margin-left: 0.5rem;
+    }
+    .experience-item {
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-left: 1rem;
+    }
+    .experience-item::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      background: #004080;
+      border-radius: 50%;
+    }
+    .exp-role {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #004080;
+    }
+    .exp-company {
+      font-style: italic;
+      color: #555;
+    }
+    .exp-period {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0.4rem;
+    }
+    .certifications ul {
+      list-style: none;
+      padding: 0;
+    }
+    .certifications li {
+      padding: 0.4rem 0;
+      font-size: 1rem;
+      color: #004080;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      padding: 1rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .contact-links a {
+      color: #0073e6;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: 600;
+    }
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      ul.skills-list {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harini KV</h1>
+    <p>AI/ML Engineer | Specialist in Scalable Machine Learning, GenAI, MLOps & Secure Cloud Solutions</p>
+  </header>
+  <main>
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>PyTorch</li>
+        <li>TensorFlow</li>
+        <li>LangChain</li>
+        <li>Azure OpenAI</li>
+        <li>AWS (Lambda, EMR, S3)</li>
+        <li>Kubernetes</li>
+        <li>Docker</li>
+        <li>MLflow</li>
+        <li>Kafka</li>
+        <li>Redis</li>
+        <li>LightGBM</li>
+        <li>dbt</li>
+        <li>Airflow</li>
+        <li>Snowflake</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <article>
+        <div class="project-title">Enterprise GenAI Document Intelligence Platform</div>
+        <div class="project-tech">Azure OpenAI, LangChain, FAISS, Docker, AKS</div>
+        <p class="project-desc">
+          Built a RAG pipeline ingesting 1.5 million+ documents per month to deliver downstream ML features, achieving a 35% improvement in company-wide accuracy metrics. Designed for HIPAA/GDPR compliance with secure cloud deployment and centralized monitoring.
+        </p>
+      </article>
+      <article>
+        <div class="project-title">Real-time Fraud Detection & Explainability Platform</div>
+        <div class="project-tech">PyTorch, LightGBM, Kafka, Redis, TensorFlow Serving</div>
+        <p class="project-desc">
+          Developed a scalable fraud detection system integrating LightGBM models with SHAP explanations and fine-tuned T5 transformers for natural language explanations, supporting critical production workloads at Citi Bank.
+        </p>
+      </article>
+      <article>
+        <div class="project-title">HIPAA-Compliant Healthcare Claims Data Pipeline</div>
+        <div class="project-tech">AWS (S3, EMR, Lambda), Airflow, Snowflake, PySpark</div>
+        <p class="project-desc">
+          Engineered a high-throughput pipeline processing over 5 million claims daily with PHI tokenization and automated data quality testing, ensuring 99.5% SLA adherence in line with regulatory compliance.
+        </p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="exp-role">AI/ML Engineer</div>
+          <div class="exp-company">Equinix</div>
+          <div class="exp-period">2022 - Present</div>
+          <p>Leading design and implementation of GenAI pipelines with Azure OpenAI, Kubernetes, and HIPAA-compliance frameworks for large-scale document intelligence.</p>
+        </div>
+        <div class="experience-item">
+          <div class="exp-role">Machine Learning Engineer</div>
+          <div class="exp-company">Citi Bank</div>
+          <div class="exp-period">2020 - 2022</div>
+          <p>Built fraud detection and explainability platforms leveraging LightGBM models, SHAP values, and PyTorch transformers serving real-time predictions.</p>
+        </div>
+        <div class="experience-item">
+          <div class="exp-role">Data Engineer - Healthcare</div>
+          <div class="exp-company">Optum</div>
+          <div class="exp-period">2018 - 2020</div>
+          <p>Built HIPAA-compliant data pipelines processing millions of healthcare claims daily with automated testing and PHI tokenization on AWS cloud.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Machine Learning - Specialty</li>
+        <li>Microsoft Certified: Azure AI Engineer Associate</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:vharinik1@gmail.com">vharinik1@gmail.com</a></p>
+      <p>Phone: +1 817 405 4157</p>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/harini-kv-a402292a9" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Harini KV | AI/ML Engineer Portfolio
+  </footer>
+</body>
+</html>
